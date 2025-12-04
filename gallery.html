@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>All Animals | Gallery</title>
+<link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+<nav class="navbar">
+    <div class="logo">🐾 Pets Find You</div>
+    <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+    </ul>
+</nav>
+
+<section class="animals-section">
+    <h2>Animals Available</h2>
+    <p class="subtitle">Filter by Type or Year</p>
+
+    <div class="filters" style="text-align:center;margin-bottom:20px;">
+        <select id="filterType">
+            <option value="All">All Types</option>
+            <option value="Cat">Cat</option>
+            <option value="Dog">Dog</option>
+            <option value="Rabbit">Rabbit</option>
+        </select>
+
+        <select id="filterYear">
+            <option value="All">All Years</option>
+            <option value="2020">2020</option>
+            <option value="2021">2021</option>
+            <option value="2022">2022</option>
+            <option value="2023">2023</option>
+        </select>
+    </div>
+
+    <div class="animal-grid" id="galleryGrid"></div>
+</section>
+
+<footer>
+    <p>© 2025 Animal Adoption | All Rights Reserved</p>
+</footer>
+
+<script src="js/gallery.js"></script>
+</body>
+</html>

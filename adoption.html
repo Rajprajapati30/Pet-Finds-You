@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Adopt Pet</title>
+<link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+<nav class="navbar">
+    <div class="logo">🐾 Pets Find </div>
+    <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+    </ul>
+</nav>
+
+<section class="animals-section">
+    <h2 id="petName"></h2>
+    <div class="animal-card" style="max-width:400px;margin:auto;">
+        <img id="petImg" src="">
+        <div class="card-content">
+            <p id="petDesc"></p>
+        </div>
+    </div>
+    <h3 style="text-align:center; margin-top:40px;">Adoption Form</h3>
+    <form id="adoptionForm" style="max-width:500px;margin:20px auto; display:flex; flex-direction:column; gap:15px;">
+        <label for="userName">Your Name</label>
+        <input type="text" id="userName" required>
+
+        <label for="userAddress">Address</label>
+        <input type="text" id="userAddress" required>
+
+        <label for="userContact">Contact Number</label>
+        <input type="tel" id="userContact" required>
+
+        <label for="userReason">Why do you want to adopt this pet?</label>
+        <textarea id="userReason" rows="4" required></textarea>
+
+        <button type="submit" class="btn" style="width:150px; align-self:center;">Submit</button>
+    </form>
+</section>
+
+<footer>
+<p>© 2025 Animal Adoption | All Rights Reserved</p>
+</footer>
+
+<script src="js/adoption.js"></script>
+
+</body>
+</html>
